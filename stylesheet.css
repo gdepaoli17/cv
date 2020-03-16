@@ -1,0 +1,8 @@
+.fit-picture{
+    max-width: 20rem;
+    max-height: 30rem;
+    margin: 2rem;
+    transform: rotate(90deg);
+    object-position: 50% 50%;
+    object-fit: contain;
+}
