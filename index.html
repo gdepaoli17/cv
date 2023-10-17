@@ -1,84 +1,264 @@
 <!DOCTYPE html>
-  <html lang="en">
-
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Gino's Personal Site</title>
-      <link rel="stylesheet" href="stylesheet.css">
-    </head>
-    <br>
-    <br>
-    <br>
-
-    <body>
-      <table>
-        <tr>
-          <td><img class="fit-picture" src="images/luca holding leo.png" alt="Gino's Profile Picture"></td>
-          <td><h1  >Gino De Paoli</h1>
-            <p><em> <a href="https://skillcrush.com/blog/front-end-back-end-full-stack/">Full-Stack Developer</a></em></p>
-            <p>I am currently a System Desktop Technician at Uline. My goal is to use Udemy's web development course to become a
-            Full-Stack Web Developer. </p></td>
-        </tr>
-      </table>
-            
-      <hr>
-      <h3>Education</h3>
-      <ul>
-        <li>Valley Ridge Elementary</li>
-        <li>Huffines Middle School</li>
-        <li> <a href="https://www.lisd.net/mhs">Marcus High School</a></li>
-        <li><a href="https://www.xavier.edu/">Xavier University</a></li>
-      </ul>
-      <hr>
-      <h3>Work Experience</h3>
-        <table cellspacing="10px">
-          <thead>
-            <th>Dates</th>
-            <th>Work</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2011-2014</td>
-              <td>Edible Arrangements Driver</td>
-            </tr>
-            <tr>
-              <td>2014-2015</td>
-              <td>Delta Ticket Agent</td>
-            </tr>
-            <tr>
-              <td>2015-2016</td>
-              <td>Ammerican Airlines Reservantions Agent</td>
-            </tr>
-          </tbody>     
-        </table>
-        <hr>
-        <h3>Skills</h3>
-        <table cellspacing="10px">
-          <tr>
-            <td>
-              <tr>
-                <td>Powershell</td>
-                <td>⚡⚡</td>
-                <td>Photography</td>
-                <td>⚡⚡⚡⚡</td>
-              </tr>
-              <tr>
-                <td>HTML</td>
-                <td>⚡⚡</td>
-                <td>CSS</td>
-                <td>⚡</td>
-              </tr>
-            </td>
-        </table>
-      <hr>  
-      <h3>My Hobbies</h3>
-        <ol>
-          <li>Spending time with family</li>
-          <li><a href="https://www.youtube.com/watch?v=pQqWzMrzMqM">Playing futbol</a></li>
-          <li>Playing video games</li>
-        </ol>
-      <h3><a href="contact-me.html">Contact Me</a></h3>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gino De Paoli</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- This is the top section (Title) -->
+    <section id="title">
+      <div class="px-4 py-5 my-5 text-center">
+        <img class="d-block mx-auto mb-4 head-shot" src="./images/headshot.png"
+        alt="" height=200">
+        <h1 class="display-5 fw-bold text-body-emphasis">Gino De Paoli</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            an enthusiastic and aspiring software engineer with a passion for
+            creating innovative and user-friendly digital experiences.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+              <a
+                href="https://www.linkedin.com/in/gino-de-paoli-61308034"
+                id="linked-in"
+                >LinkedIn</a
+              >
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+              <a href="https://github.com/gdepaoli17">GitHub</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- This section shows off the skills using cards from bootstrap -->
+    <section id="skills">
+      <div class="container mb-5">
+        <div class="row row-content text-align-center skills">
+          <div class="card m-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4 images">
+                <img
+                  src="./images/py.png"
+                  class="img-fluid rounded-start"
+                  alt="python"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Python</h5>
+                  <p class="card-text">
+                    I leverage Python for automation, data manipulation, and algorithm development, enabling streamlined processes and innovative solutions.
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4 images">
+                <img
+                  src="./images/fullstack.png"
+                  class="img-fluid rounded-start"
+                  alt="full stack"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Web Development</h5>
+                  <p class="card-text">
+                    Creating complete web solutions with seamless user interfaces and robust server-side functionality, using frameworks like Django and Express.
+                  </p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4 images">
+                <img
+                  src="./images/powershell.png"
+                  class="img-fluid rounded-start"
+                  alt="powershell"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Windows Administration</h5>
+                  <p class="card-text">
+                    Using PowerShell, I automate system configurations, manage users, and ensure efficient Windows network management and security.
+                  </p>
+                
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4 images">
+                <img
+                  src="./images/sql.png"
+                  class="img-fluid rounded-start"
+                  alt="SQL"
+                  style="max-height: 150px"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">SQL</h5>
+                  <p class="card-text">
+                    SQL enables efficient database management, optimized queries, and data-driven insights that support informed decision-making.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- This section is a carousel of my projects using bootstrap -->
+    <section class="projects">
+      <div class="container mt-5 mb-5">
+        <div
+          id="myCarousel"
+          class="carousel slide mb-6 carousel-dark"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class=""
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class=""
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class="active"
+              aria-current="true"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> -->
+              <img
+                src="./images/pyxl2word.png"
+                alt="python + excel to word"
+                width="100%"
+                height="100%"
+                preserveAspectRatio="xMidYMid slice"
+              />
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <p></p>
+                    <a
+                      class="btn btn-lg btn-primary"
+                      href="https://github.com/gdepaoli17/Python"
+                      >PY GitHub</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> -->
+              <img
+                src="./images/powershell2excel.png"
+                alt="python + excel to word"
+                width="100%"
+                height="100%"
+                preserveAspectRatio="xMidYMid slice"
+              />
+              <div class="container">
+                <div class="carousel-caption">
+                  <p>
+                    <a
+                      class="btn btn-lg btn-primary"
+                      href="https://github.com/gdepaoli17/powershell"
+                      >Powershell GitHub</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg> -->
+              <img
+                src="./images/tkinter.png"
+                alt="python + excel to word"
+                width="100%"
+                height="100%"
+                preserveAspectRatio="xMidYMid slice"
+              />
+              <div class="container">
+                <div class="carousel-caption text-end"></div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">© Gino De Paoli</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://github.com/gdepaoli17/"><img src="./images/github-mark-white.svg" alt="" height="24" width="24"></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/gino-de-paoli-61308034"><img src="./images/linkedin.svg" alt="" height="24" width="24"></a></li>
+          </ul>
+        </footer>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
-
 </html>
