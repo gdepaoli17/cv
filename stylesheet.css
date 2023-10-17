@@ -1,8 +1,25 @@
-.fit-picture{
-    max-width: 20rem;
-    max-height: 30rem;
-    margin: 2rem;
-    transform: rotate(90deg);
-    object-position: 50% 50%;
-    object-fit: contain;
+body {
+    font-family: "Open Sans";
+}
+
+.head-shot {
+    border-radius: 50%;
+}
+
+#linked-in {
+    color: white;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border-radius: 2%;
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
 }
